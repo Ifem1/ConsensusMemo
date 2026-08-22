@@ -1,0 +1,10 @@
+[project]
+name = "consensusmemo"
+version = "0.1.0"
+description = "Reusable exact-context consensus receipts for GenLayer Intelligent Contracts"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"
