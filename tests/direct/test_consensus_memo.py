@@ -174,3 +174,10 @@ def test_ttl_bounds_are_enforced(direct_vm, direct_deploy, direct_alice):
         contract.resolve(QUESTION, EVIDENCE, POLICY, CONTEXT, SCHEMA, 59)
     with pytest.raises(Exception, match="ttl out of bounds"):
         contract.resolve(QUESTION, EVIDENCE, POLICY, CONTEXT, SCHEMA, 31536001)
+
+
+def test_storage_serialization_is_supported(direct_vm, direct_deploy, direct_alice):
+    direct_vm.check_pickling = True
+    contract = deploy(direct_vm, direct_deploy, direct_alice)
+    resolve_yes(contract, direct_vm)
+    assert contract.is_usable(1) is True
