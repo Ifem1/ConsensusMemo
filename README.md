@@ -131,7 +131,7 @@ genvm-lint check contracts/consensus_memo.py
 pytest tests/direct/ -v
 ```
 
-GenLayer's current testing tooling supports direct-mode validator capture: tests can run the leader, swap the mocked LLM response, and call `direct_vm.run_validator()` to prove that a competing validator result is rejected.
+GenLayer's current testing tooling supports direct-mode validator capture: tests can run the leader, swap the mocked LLM response, and call `direct_vm.run_validator()` to prove that a competing validator result is rejected. On Windows, `tests/conftest.py` contains a narrow test-only workaround for a `genlayer-test 0.29.2` temporary-file cleanup defect that occurs before contract loading.
 
 ## Test coverage
 
@@ -148,6 +148,8 @@ The direct suite covers:
 - creator-only revocation;
 - supersession lifecycle;
 - TTL bounds.
+
+The verified local Direct Mode result is **11 passed**. GenVM lint and SDK validation also pass; see `docs/DEPLOYMENT.md` for the current evidence boundary. No Studionet deployment is claimed until a live deployment and runtime smoke tests are recorded.
 
 ## What this is not
 

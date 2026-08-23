@@ -4,6 +4,16 @@
 
 Standalone GenLayer Intelligent Contract / reusable contract primitive.
 
+## Canonical Studionet proof
+
+- Address: `0x77487c3DeC6Eca1467393c4634E6172c7f9C2D0A`
+- Deployment transaction: `0xa5ca55d83ff1778279c7a9ccc5883178c4e434a0cf3d9827cc7996537376869a`
+- Lifecycle: `ACCEPTED`; consensus result `MAJORITY_AGREE`
+- Safe resolution: `0xfeb52bc636c4f38b67686baa1284cca8c7c9a05596235376f460e630c5a3414d`
+- Exact-context reuse: `0xeae14e6107eee62ba7ebec571f89bec2035bff20273b52fe1c1bd5390d10f4b4`
+
+The full evidence boundary and source-parity record are maintained in `docs/DEPLOYMENT.md`.
+
 ## One-line purpose
 
 ConsensusMemo lets other Intelligent Contracts reuse a previously settled semantic decision only when the exact question, evidence, policy, context, and schema version still match and the receipt remains active and unexpired.
