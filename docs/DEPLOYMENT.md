@@ -19,7 +19,12 @@ This file records verified evidence only.
 ## Local verification
 
 - `genvm-linter==0.10.0`: lint and validation passed with exit code 0.
-- Direct Mode: 11 passed after the narrow test-only Windows workaround in `tests/conftest.py` for the `genlayer-test 0.29.2` temp-file cleanup bug. The initial failure was before contract loading and was not a contract failure.
+- Direct Mode: 12 passed after the narrow test-only Windows workaround in `tests/conftest.py` for the `genlayer-test 0.29.2` temp-file cleanup bug. The initial failure was before contract loading and was not a contract failure.
+- Preflight: 6/6 passed.
+- GenVM lint: passed.
+- SDK validation: passed.
+- Studionet integration: 2 passed, 1 opt-in skipped.
+- Negative Studionet test: passed independently.
 
 ## Runtime evidence on the canonical deployment
 

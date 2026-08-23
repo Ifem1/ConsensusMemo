@@ -149,7 +149,19 @@ The direct suite covers:
 - supersession lifecycle;
 - TTL bounds.
 
-The verified local Direct Mode result is **11 passed**. GenVM lint and SDK validation also pass; see `docs/DEPLOYMENT.md` for the current evidence boundary. No Studionet deployment is claimed until a live deployment and runtime smoke tests are recorded.
+The verified local Direct Mode result is **12 passed**. GenVM lint and SDK validation also pass. Current deployment and runtime evidence is recorded in [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+
+## Canonical Studionet deployment
+
+- Contract: `0x77487c3DeC6Eca1467393c4634E6172c7f9C2D0A`
+- Deployment transaction: `0xa5ca55d83ff1778279c7a9ccc5883178c4e434a0cf3d9827cc7996537376869a`
+- Consensus: `MAJORITY_AGREE`
+- Lifecycle: `ACCEPTED` (not claimed as FINALIZED)
+- [Open the contract in Explorer](https://explorer-studio.genlayer.com/address/0x77487c3DeC6Eca1467393c4634E6172c7f9C2D0A)
+- Safe resolution transaction: `0xfeb52bc636c4f38b67686baa1284cca8c7c9a05596235376f460e630c5a3414d`
+- Exact-context reuse transaction: `0xeae14e6107eee62ba7ebec571f89bec2035bff20273b52fe1c1bd5390d10f4b4`
+
+Verified current results: preflight **6/6 passed**; GenVM lint **passed**; SDK validation **passed**; Direct Mode **12 passed**; Studionet integration **2 passed, 1 opt-in skipped**; the negative Studionet test **passed independently**. See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the complete evidence record.
 
 ## What this is not
 
