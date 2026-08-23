@@ -13,7 +13,8 @@ This file records verified evidence only.
 - Lifecycle: `ACCEPTED`
 - Consensus result: `MAJORITY_AGREE`, one round
 - Explorer: [Studionet explorer](https://explorer-studio.genlayer.com/address/0x77487c3DeC6Eca1467393c4634E6172c7f9C2D0A)
-- Deployment source commit: recorded after this evidence commit; the contract blob is unchanged from the earlier audited source
+- Deployment source commit: `817a7098f5ab5062879f7f7c6b0890031281eda6`
+- Deployed contract blob: `82b31eca9372b9f2289c1e147f8a07e6bc344a5e`
 
 ## Local verification
 
