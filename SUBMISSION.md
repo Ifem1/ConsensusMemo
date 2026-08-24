@@ -14,6 +14,8 @@ Standalone GenLayer Intelligent Contract / reusable contract primitive.
 
 The full evidence boundary and source-parity record are maintained in `docs/DEPLOYMENT.md`.
 
+The canonical live proof now covers semantic settlement, exact-context reuse, changed-context isolation, automatic TTL expiry, explicit revocation, and explicit supersession. Memo #1 remains untouched; lifecycle demonstrations use disposable memos #2–#5 and are recorded with raw `ACCEPTED` transaction status, GenVM `SUCCESS`, and `MAJORITY_AGREE` consensus results.
+
 ## One-line purpose
 
 ConsensusMemo lets other Intelligent Contracts reuse a previously settled semantic decision only when the exact question, evidence, policy, context, and schema version still match and the receipt remains active and unexpired.
